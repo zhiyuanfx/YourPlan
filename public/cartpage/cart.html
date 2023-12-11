@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+  Zhiyuan Jia & Yuekai Xu
+  10/23/2023
+  Section: CSE 154 AF
+  TA: Rasmus Makiniemi
+  This is the cart.html page for our YourPlan course enrollment website. It is
+  the "cart" page containing all the selected courses and allowing the user to
+  delete courses or send all of them to registration. The light blue theme is
+  consistent with the homepage.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YourPlan Cart</title>
+    <link href="cart.css" rel="stylesheet">
+    <script src="cart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <section id="headbar">
+        <!-- this is a logo we drew -->
+        <img src="../img/yourplanlogo.png" alt="logo">
+        <ul class="button-list">
+          <li><button id="main-page" class="button">Main Page</button></li>
+          <li><button id="audit" class="button">Degree Audit</button></li>
+          <li><button id="history" class="button">History</button></li>
+          <li><button id="logout" class="button">Log-Out</button></li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <ul id="alerts">
+        <li></li>
+      </ul>
+      <h1 id="addedtitle">Course Cart</h1>
+      <section id="added">
+      </section>
+      <h1 id="registeredtitle">Registered Courses</h1>
+      <section id="registered">
+      </section>
+      <article id="actions">
+        <button id="registerall">Register All</button>
+      </article>
+    </main>
+    <footer>
+      <hr>
+      <p><a href="../aboutus/aboutus.html">About Us</a></p>
+    </footer>
+  </body>
+</html>

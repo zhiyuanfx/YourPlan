@@ -1,0 +1,217 @@
+/*
+  Name: Zhiyuan Jia & Yuekai Xu
+  Date: October 23, 2023
+  Section: CSE 154 AF
+  TA: Rasmus
+  This is the cart.css page that is used by cart.html page in our YourPlan
+  course enrollment website. It takes a light blue theme that is consistent with
+  the website main page, and allows the user to view selected courses clearly.
+*/
+
+body {
+  background-color: hsl(180, 32%, 91%);
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 15%;
+}
+
+.button-list {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  background-color: #0077B6;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.button {
+  color: #fff;
+  padding: 10px 100px;
+  margin: 10px 10px;
+  border: #007bff;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.button:hover {
+  background-color: dodgerblue;
+}
+
+#headbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, h3, li {
+  font-family: 'Anton', sans-serif;
+}
+
+h2 {
+  text-align: left;
+  font-size: 20px;
+}
+
+h1, h3, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 30pt;
+  color: #005994;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+#alerts {
+  width: 65%;
+  padding-left: unset;
+}
+
+#alerts, section > article, section section, #actions {
+  display: flex;
+  justify-content: center;
+}
+
+#alerts, section article, #alerts ~ section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#alerts li {
+  color: rgb(225, 144, 64);
+  text-decoration: underline;
+  font-size: 18px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+button {
+  border: none;
+  background-color: #0077B6;
+  color: white;
+}
+
+button:hover {
+  background-color: #005994;
+}
+
+#actions button {
+  padding: 10px 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#actions button, article > article {
+  border-radius: 5px;
+}
+
+h2 + button {
+  padding: 1px 2px;
+  border-radius: 3px;
+  height: 90%;
+}
+
+h2 + button, .course > article + article {
+  margin-left: 10px;
+}
+
+section section {
+  flex-wrap: wrap;
+}
+
+section section, section > article {
+  align-items: center;
+}
+
+section > article {
+  margin-bottom: 5%;
+  padding: 20px;
+}
+
+section > article, h2, h3 {
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+section > article:hover {
+  background-color: rgb(94, 222, 162);
+}
+
+section > article:hover h2 {
+  font-size: 33px;
+}
+
+section > article:hover h3 {
+  font-size: 26px;
+}
+
+.course > article + article {
+  width: 30%;
+}
+
+article > article {
+  border: 5px solid #0077B6;
+  background-color: rgb(235, 222, 139);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.course > article {
+  width: 60%;
+}
+
+.course, #alerts ~ section {
+  width: 80%;
+}
+
+section p {
+  margin-top: unset;
+}
+
+#alerts ~ section {
+  border-radius: 10px;
+  border-right: 5px solid #cc9a3c;
+  border-left: 5px solid #4cd8c1;
+}
+
+#registerall, #deleteall {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  width: 30%;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0077B6;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+h2:hover {
+  text-decoration: underline;
+  color: rgb(71, 60, 189);
+}
