@@ -1,0 +1,117 @@
+/*
+  Name: Zhiyuan Jia & Yuekai Xu
+  Date: October 23, 2023
+  Section: CSE 154 AF
+  TA: Rasmus
+  This is the login.css page that is used by login.html page in our YourPlan
+  course enrollment website. It takes a light blue theme that is consistent with
+  the website main page, and gives the user a simple, clean view to the log-in process.
+*/
+
+body {
+  background-color: hsl(180, 32%, 91%);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 25pt;
+  text-align: center;
+}
+
+h1, label {
+  color: #0077B6;
+}
+
+header, main section {
+  display: flex;
+}
+
+header {
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 3%;
+}
+
+header, section, #netid, #password {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 20%;
+  margin-bottom: 2%;
+}
+
+main > section {
+  border: 2px solid #0077B6;
+  padding: 2em;
+  border-radius: 10px;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > section {
+  justify-content: center;
+}
+
+input {
+  width: 90%;
+  margin-bottom: 1em;
+  border: 1px solid #0077B6;
+  outline: none;
+  font-size: 16px;
+  display: block;
+}
+
+input, button {
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0077B6;
+  color: white;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rememberme {
+  width: 10%;
+}
+
+#mainpage {
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #005994;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  width: 30%;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0077B6;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
