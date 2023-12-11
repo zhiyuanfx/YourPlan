@@ -1,0 +1,107 @@
+/*
+  Yuekai Xu
+  Oct 1 2023
+  TA: Rasmus Makiniemi
+  Section: CSE 154 AF
+
+  Styles for my about.html and todo.html file, it includ the text size, color,
+  button, and etc for my self introdcution and my todo list.
+*/
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button, .delete-button {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #a09f9f;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-button {
+  background-color: #FF414D;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  background-color: blanchedalmond;
+  font-family: "Audiowide", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h1 {
+  color: blueviolet;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 13pt;
+}
+
+span {
+  color: midnightblue;
+}
+
+p, span, li, footer {
+  font-weight: bold;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+blockquote p, footer {
+  color: coral;
+}
+
+footer {
+  font-size: 10pt;
+  text-align: right;
+}
+
+ul li {
+  color: blue;
+}
