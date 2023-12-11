@@ -1,0 +1,145 @@
+/*
+  Name: Zhiyuan Jia & Yuekai Xu
+  Date: October 28, 2023
+  Section: CSE 154 AF
+  TA: Rasmus
+  This is the history.css page that is used by history.html page in our YourPlan
+  course enrollment website. It takes a light blue theme that is consistent with
+  the website main page, and navigate the user through the registration history
+  with a clear, simple, chronological format.
+*/
+
+body {
+  background-color: hsl(180, 32%, 91%);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Anton', sans-serif;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 30pt;
+  color: #005994;
+}
+
+h2 {
+  font-size: 27pt;
+  color: coral;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 20pt;
+  color: rgb(37, 99, 37);
+}
+
+h4 {
+  font-size: 15pt;
+}
+
+h4 + p {
+  font-size: 12pt;
+}
+
+img {
+  width: 15%;
+}
+
+.button-list {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  background-color: #0077B6;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.button {
+  color: #fff;
+  padding: 10px 100px;
+  margin: 10px 10px;
+  border: #007bff;
+  cursor: pointer;
+  font-size: 11px;
+  background-color: #0077B6;
+}
+
+.button:hover {
+  background-color: dodgerblue;
+}
+
+#headbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 + section {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  justify-content: center;
+  background-color: rgb(169, 165, 165);
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid gray 5px;
+}
+
+h2 + section, .season {
+  border-radius: 5px;
+  border-style: ridge;
+}
+
+.season {
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: rgb(217, 176, 86);
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 30%;
+  border: solid rgb(173, 131, 45) 5px;
+}
+
+.course {
+  margin-left: 30px;
+}
+
+a {
+  color: rgb(62, 75, 171);
+}
+
+a:hover {
+  color: rgb(47, 47, 93);
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  width: 30%;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0077B6;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
