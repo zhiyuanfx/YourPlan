@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+  Zhiyuan Jia & Yuekai Xu
+  10/28/2023
+  Section: CSE 154 AF
+  TA: Rasmus Makiniemi
+  This is the audit.html page for our YourPlan course enrollment website. It is
+  the degree audit of our website, and it has a light blue theme. It displays all
+  the courses for user's major require.
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Degree Audit</title>
+    <link rel="stylesheet" href="audit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <script src="audit.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- the logo we drew for our website -->
+      <img src="../img/yourplanlogo.png" alt="logo">
+      <ul class="button-list">
+        <li><button id="main-page" class="button">Main Page</button></li>
+        <li><button id="cart-button" class="button">Cart</button></li>
+        <li><button id="history" class="button">History</button></li>
+        <li><button id="logout" class="button">Log-Out</button></li>
+      </ul>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Degree Audit</h1>
+        <h2>Student Information</h2>
+        <p><strong>Name: </strong><span id="name"></span></p>
+        <p><strong>Student ID: </strong><span id="id"></span></p>
+        <p><strong>Credit earned: </strong><span id="earned"></span></p>
+        <p><strong>Credit needed: </strong><span id="needed"></span></p>
+
+        <label for="major-and-minor">Major and Minor:</label>
+        <select id="major-and-minor" name="major-and-minor">
+          <option value="CSE">CSE</option>
+          <option value="AMATH">AMATH</option>
+          <option value="MATH">MATH</option>
+          <option value="MUSIC">MUSIC</option>
+          <option value="ACCTG">ACCTG</option>
+          <option value="PHIL">PHIL</option>
+          <option value="ENGL">ENGL</option>
+          <option value="AMATH-M">AMATH Minor</option>
+          <option value="CSE-M">CSE Minor</option>
+          <option value="MATH-M">MATH Minor</option>
+          <option value="MUSIC-M">MUSIC Minor</option>
+          <option value="ACCTG-M">ACCTG Minor</option>
+          <option value="PHIL-M">PHIL Minor</option>
+          <option value="ENGL-M">ENGL Minor</option>
+        </select>
+
+        <h3>Degree Needed</h3>
+        <table id="audit-table">
+          <tr>
+            <th>Course Name</th>
+            <th>Course Title</th>
+            <th>Credits</th>
+          </tr>
+        </table>
+        <h3>Courses Passed</h3>
+        <table id="audit-table-pass">
+          <tr>
+            <th>Course Name</th>
+            <th>Course Title</th>
+            <th>Credits</th>
+            <th>status</th>
+          </tr>
+        </table>
+        <h3>Courses In progress</h3>
+        <table id="audit-table-in-progress">
+          <tr>
+            <th>Course Name</th>
+            <th>Course Title</th>
+            <th>Credits</th>
+            <th>status</th>
+          </tr>
+        </table>
+        <h3>Courses failed</h3>
+        <table id="audit-table-failed">
+          <tr>
+            <th>Course Name</th>
+            <th>Course Title</th>
+            <th>Credits</th>
+            <th>status</th>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <hr>
+      <p><a href="../aboutus/aboutus.html">About Us</a></p>
+    </footer>
+  </body>
+</html>
