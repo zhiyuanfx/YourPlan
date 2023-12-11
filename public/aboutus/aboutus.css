@@ -1,0 +1,71 @@
+/*
+  Name: Zhiyuan Jia & Yuekai Xu
+  Date: October 28, 2023
+  Section: CSE 154 AF
+  TA: Rasmus
+  This is the aboutus.css page that is used by aboutus.html page in our YourPlan
+  course enrollment website. It takes a light blue theme that is consistent with
+  the website main page, and gives the user a simple, clean view to the website builders.
+*/
+
+body {
+  background-color: hsl(180, 32%, 91%);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 30pt;
+  text-align: center;
+  color: #0077B6;
+}
+
+header, article, main {
+  display: flex;
+}
+
+header, article {
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin-top: 30px;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+header img {
+  width: 15%;
+}
+
+article img {
+  width: 40%;
+  height: 70%;
+}
+
+article {
+  background-color: rgb(87, 159, 232);
+  margin: 20px;
+  width: 40%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  border-radius: 10px;
+  border: 5px solid rgb(77, 77, 208);
+  border-style: outset;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+article:hover {
+  background-color: rgb(240, 179, 99);
+}
+
+article:hover p {
+  text-decoration: underline;
+}
