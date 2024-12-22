@@ -1,0 +1,170 @@
+/*
+  Name: Zhiyuan Jia & Yuekai Xu
+  Date: October 24, 2023
+  Section: CSE 154 AF
+  TA: Rasmus
+  This is the classpage.css page that is used by classpage.html page in our YourPlan
+  course enrollment website. It takes a light blue theme that is consistent with
+  the website main page, and allows the user to view basic information of the
+  specific course, including its sections schedule, instructors, descriptions, etc.
+*/
+
+body {
+  background-color: hsl(180, 32%, 91%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-list {
+  list-style: none;
+  margin: 10px;
+  background-color: #0077B6;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  color: #fff;
+  padding: 10px 100px;
+  margin: 10px 10px;
+  border: #007bff;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.button:hover {
+  background-color: dodgerblue;
+}
+
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+p, h1 {
+  text-align: left;
+}
+
+header, #headbar, article {
+  align-items: center;
+}
+
+header, header > section {
+  flex-direction: column;
+}
+
+#headbar ~ section, .button-list {
+  justify-content: space-around;
+}
+
+#headbar ~ section {
+  width: 80%;
+  background-color: #a7d1e8;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+}
+
+article, header > section, header, .button-list {
+  display: flex;
+}
+
+img {
+  width: 15%;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 30pt;
+  color: #005994;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3, p {
+  font-size: 15px;
+}
+
+main > section {
+  border-top: solid #005994 5px;
+  border-radius: 2%;
+}
+
+article {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3%;
+}
+
+button {
+  border: none;
+  background-color: #0077B6;
+  color: white;
+  padding: 1px 2px;
+  border-radius: 3px;
+  height: 90%;
+}
+
+button:hover {
+  background-color: #005994;
+}
+
+section > article:hover {
+  background-color: rgb(218, 191, 242);
+}
+
+.added {
+  background-color: rgb(109, 213, 153);
+}
+
+.lecture ~ article {
+  width: 90%;
+  border-radius: unset;
+}
+
+.lecture + article {
+  border-top: #c39d14 3px solid;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  width: 30%;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0077B6;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

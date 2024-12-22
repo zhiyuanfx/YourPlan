@@ -1,0 +1,146 @@
+/*
+  Zhiyuan Jia
+  10/11/2023
+  Section: CSE 154 AF
+  TA: Rasmus Makiniemi
+  This is the zhiyuan.css page for my portfolio of web development work.
+  It is used by the zhiyuan.html page in my portfolio and has a cute, blue
+  and yellow theme.
+*/
+
+body {
+  background-image: url("../../img/zhiyuan.png");
+  background-attachment: fixed;
+  background-size: contain;
+  width: 75%;
+}
+
+body, ul, ol {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul, ol {
+  width: 50%;
+}
+
+body > section {
+  background-color: rgb(205, 155, 82);
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 5px dashed rgb(78, 154, 186);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 + p {
+  font-size: 26pt;
+  color: rgb(42, 133, 110);
+}
+
+p, li, footer {
+  font-family: 'Schoolbell', cursive;
+}
+
+strong {
+  font-weight: 3000;
+  text-decoration: solid;
+}
+
+h1, h2, h3 {
+  font-family: 'Architects Daughter', cursive;
+  color: rgb(82, 82, 226);
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+#greetings p {
+  background-color: rgb(236, 128, 89);
+  font-size: 18pt;
+}
+
+h3 + p {
+  background-color: blanchedalmond;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 25pt;
+}
+
+h3 {
+  font-size: 20pt;
+  text-decoration: underline;
+}
+
+blockquote p {
+  font-weight: bold;
+}
+
+blockquote {
+  background-color: rgb(191, 198, 90);
+}
+
+li, blockquote p {
+  font-size: 22pt;
+}
+
+img {
+  max-width: 80%;
+  border-radius: 50%;
+  border-color: rgb(39, 85, 200);
+  border-style: double;
+}
+
+.hidden {
+  display: none;
+}
+
+ol + section, section > section > article {
+  display: flex;
+}
+
+section > section {
+  justify-content: space-evenly;
+}
+
+section > section > article {
+  width: 45%;
+  height: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#favorite {
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+ul:hover #favorite {
+  color: rgb(51, 191, 194);
+  font-size: 50px;
+  text-shadow: 10px 10px 15px rgb(221, 39, 39);
+}
+
+footer {
+  text-align: right;
+  font-size: medium;
+}
+
+#inputsection {
+  text-align: center;
+}
+
+input {
+  background-color: rgb(178, 222, 229);
+  width: 35%;
+}
+
+button {
+  background-color: rgb(211, 211, 48);
+}

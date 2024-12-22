@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+  Zhiyuan Jia
+  10/11/2023
+  Section: CSE 154 AF
+  TA: Rasmus Makiniemi
+  This is the zhiyuan.html page for my portfolio of web development work.
+  It contains my basic informationn, such as who I am, what I like,
+  one of my favorite quotes and secrets, and a section for saying hi to me.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="zhiyuan.css">
+    <script src="zhiyuan.js"></script>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Schoolbell&display=swap">
+    <title>Zhiyuan</title>
+  </head>
+  <body>
+    <section>
+      <h1>Zhiuyuan Jia: Who I Am, What I Like, and When I'm Happy or Sad</h1>
+      <p>
+        I am a sophomore in Applied Math from China. I love coding, gaming,
+        ping-pong, and listening to music.
+      </p>
+    </section>
+
+    <section>
+      <h2>Classes I'm currently taking (Hover List to See My Favorite!)</h2>
+      <ul>
+        <li>CSE 123</li>
+        <li id="favorite">CSE 154</li>
+        <li>CFRM 405</li>
+        <li>PSYCH 210</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Five of My Favorite Things</h2>
+      <ol>
+        <li><strong>Favorite animal:</strong> Koala</li>
+        <li><strong>Favorite food:</strong> Potatoes</li>
+        <li><strong>Favorite movie:</strong>
+          <a href="https://en.wikipedia.org/wiki/Spirited_Away"> Spirited Away</a>
+        </li>
+        <li><strong>Favorite hobby:</strong> Ping-Pong</li>
+        <li><strong>Favorite Color:</strong> Sky Blue</li>
+      </ol>
+
+      <section>
+        <article>
+          <h3>Click to See A picture that represents when I'm happy</h3>
+          <!--
+            image from wallpaperwaifu.com, a free wallpaper website
+            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperwaifu.com%2Flifestyle%2Fcozy
+            -autumn-rain-live-wallpaper%2F&psig=AOvVaw23k5TzuigaMoWl31n3truL&ust=1696192979273000&s
+            ource=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMCYtq-Z04EDFQAAAAAdAAAAABAE
+          -->
+          <img class="hidden" src="../../img/cozyautumnrainthumb.jpeg" alt="a cozy, warm autumn afternoon">
+        </article>
+
+        <article>
+          <h3>Click to See A picture that represents when I'm sad</h3>
+          <!--
+            image from obsev.com, an online news press
+            https://www.obsev.com/wp-content/uploads/sites/2/2019/09/disney-sad-
+            featured.jpg.optimal.jpg
+          -->
+          <img class="hidden" src="../../img/sadflyinghouse.jpg.optimal.jpg" alt="a sad scene in Up">
+        </article>
+      </section>
+
+      <h3>Click to See One of my favorite quotes</h3>
+      <article class="hidden">
+        <blockquote>
+          <p>"To iterate is human, to recurse divine."</p>
+          <footer>L Peter Deutsch</footer>
+        </blockquote>
+      </article>
+
+      <h3>Click to See/Hide My Secret</h3>
+      <p class="hidden">Growing up in a city where everyone eats seafood, I never like it.</p>
+    </section>
+
+    <section>
+      <section id="greetings">
+        <h2>!Say Hi To Me In The Section Below!</h2>
+        <p>Hi Zhiyuan, nice to meet you! I'm also in Applied Math!</p>
+      </section>
+
+      <section id="inputsection">
+        <input type="text" placeholder="say hi...">
+        <button>Double Click To Submit</button>
+      </section>
+    </section>
+  </body>
+</html>

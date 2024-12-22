@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+  Zhiyuan Jia & Yuekai Xu
+  10/23/2023
+  Section: CSE 154 AF
+  TA: Rasmus Makiniemi
+  This is the login.html page for our YourPlan course enrollment website. It is
+  the log-in page of the website where the user logs in with user name and passwrod.
+  The light blue theme is consistent with the homepage.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YourPlan Log-in</title>
+    <link href="login.css" rel="stylesheet">
+    <script src="login.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!-- this is the logo that we drew -->
+      <img src="../img/yourplanlogo.png" alt="yourplan-logo">
+      <h1>Log-In With NetId and Password!</h1>
+    </header>
+    <main>
+      <section>
+        <form id="login-form">
+          <label for='netid'>netid</label>
+          <input type='text' id='netid' name='netid' required>
+          <label for='password'>password</label>
+          <input type='text' id='password' name='password' required>
+          <button type='submit'>Sign-In</button>
+        </form>
+        <section>
+          <label for="rememberme">Remember me</label>
+          <input type="checkbox" id="rememberme">
+        </section>
+        <section id="error">
+
+        </section>
+      </section>
+      <button id="mainpage">Back</button>
+    </main>
+    <footer>
+      <hr>
+      <p><a href="../aboutus/aboutus.html">About Us</a></p>
+    </footer>
+  </body>
+</html>
